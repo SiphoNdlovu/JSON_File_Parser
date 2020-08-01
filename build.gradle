@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'base'
+    id 'maven'
+    id "org.gretty" version "2.3.1"
+    id 'war'
+}
+
+group 'za.co.sipho'
+version '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+gretty {
+    httpPort = 8081
+    enableNaming = true
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+}

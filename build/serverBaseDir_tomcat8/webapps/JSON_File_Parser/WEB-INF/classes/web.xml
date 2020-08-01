@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Defines a Resource Reference for connection pooling to mySQL -->
+<web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" 
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_4.xsd" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <resource-ref>
+        <description>MySQL Connection to underlying database</description>
+        <res-ref-name>jdbc/destinationDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+    <context-param>
+        <param-name>war.ver</param-name>
+        <param-value>2.15</param-value>
+    </context-param>
+    <listener>
+<!--        <listener-class>za.co.av.microservice.lending.environment.LendingSessionBean</listener-class>-->
+    </listener>
+</web-app>
