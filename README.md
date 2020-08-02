@@ -14,7 +14,7 @@ This application is used  to parse a json file and pretty prints the result usin
 
 - the different sections of the assessment were implemented on their own servlet
 
-a) pretty printing all addresses  from file with validation  http://localhost:8081/JSON_File_Parser/parseAllAddresses
-b) print address from file http://localhost:8081/JSON_File_Parser/parseSingleAddress
-c) print type of address http://localhost:8081/JSON_File_Parser/parseAddressType
+a) pretty printing all addresses  from file with validation  http://localhost:8081/JSON_File_Parser/parseAllAddresses , class under webservice package (ParseAllAddressWithValidation)
+b) print address from file http://localhost:8081/JSON_File_Parser/parseSingleAddress  , class under webservice package (ParseSingleAddress)
+c) print type of address http://localhost:8081/JSON_File_Parser/parseAddressType , class under webservice package(ParseAddressType)
 
